@@ -43,7 +43,7 @@ void					*ft_memmove(void *dest, const void *src, size_t n)
 	i = 0;
 	dest_tmp = dest;
 	source_tmp = src;
-	if (dest_tmp > source_tmp && (size_t)(dest_tmp - source_tmp) < n)
+	if ((dest_tmp > source_tmp) && (size_t)(dest_tmp - source_tmp) <= n)
 		dest_tmp = copy_n_octet(dest_tmp, source_tmp, n);
 	else
 		dest_tmp = copy_i_octet(dest_tmp, source_tmp, n, i);

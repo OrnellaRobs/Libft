@@ -57,7 +57,7 @@ char					*ft_strtrim(char const *s)
 	unsigned int	size;
 
 	if (s == NULL || str_is_empty(s))
-		return (NULL);
+		return ("");
 	len_s = ft_strlen((char*)s);
 	begin = is_space_begin((char*)s);
 	size = len_s - (begin + is_space_end((char*)s, (len_s - 1)));
