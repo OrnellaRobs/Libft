@@ -6,7 +6,7 @@
 /*   By: orazafin <orazafin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/26 19:34:44 by orazafin          #+#    #+#             */
-/*   Updated: 2016/12/06 14:26:19 by orazafin         ###   ########.fr       */
+/*   Updated: 2016/12/11 19:26:20 by orazafin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,6 @@ char	*ft_strmap(char const *s, char (*f)(char))
 		str[i] = f(s[i]);
 		i++;
 	}
+	str[i] = '\0';
 	return (str);
 }

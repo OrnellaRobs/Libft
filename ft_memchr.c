@@ -6,7 +6,7 @@
 /*   By: orazafin <orazafin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/24 15:05:36 by orazafin          #+#    #+#             */
-/*   Updated: 2016/12/06 10:45:17 by orazafin         ###   ########.fr       */
+/*   Updated: 2016/12/11 19:18:27 by orazafin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,9 +19,9 @@ void	*ft_memchr(const void *s, int c, size_t n)
 
 	i = 0;
 	s1 = s;
-	while (s1[i] && (i < n))
+	while (i < n)
 	{
-		if (s1[i] == c)
+		if (s1[i] == (char)c)
 			return ((void *)s1 + i);
 		i++;
 	}
