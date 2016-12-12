@@ -6,7 +6,7 @@
 /*   By: orazafin <orazafin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/12 14:02:07 by orazafin          #+#    #+#             */
-/*   Updated: 2016/12/12 14:02:09 by orazafin         ###   ########.fr       */
+/*   Updated: 2016/12/12 23:37:08 by orazafin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,8 @@
 
 int		ft_is_space(char *str)
 {
-	int i;
-
-	i = 0;
-	if (str[i] == ' ' || str[i] == '\n' || str[i] == '\t' || str[i] == '\v' ||
-		str[i] == '\f' || str[i] == '\f' || str[i] == '\r')
+	if (*str == ' ' || *str == '\n' || *str == '\t' || *str == '\v' ||
+		*str == '\f' || *str == '\f' || *str == '\r')
 		return (1);
 	return (0);
 }

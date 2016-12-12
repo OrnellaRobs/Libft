@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: orazafin <orazafin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/11/21 14:47:27 by orazafin          #+#    #+#             */
-/*   Updated: 2016/12/12 15:32:06 by orazafin         ###   ########.fr       */
+/*   Created: 2016/12/12 23:37:26 by orazafin          #+#    #+#             */
+/*   Updated: 2016/12/12 23:41:52 by orazafin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,5 +87,6 @@ int					ft_count_number(int n);
 t_list				*ft_create_elem(void *content);
 char				*ft_strcapitalize(char *str);
 int					ft_is_upper(char c);
+int					ft_is_lower(char c);
 
 #endif

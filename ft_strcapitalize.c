@@ -5,48 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: orazafin <orazafin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/12/12 14:29:26 by orazafin          #+#    #+#             */
-/*   Updated: 2016/12/12 15:33:40 by orazafin         ###   ########.fr       */
+/*   Created: 2016/12/12 23:39:26 by orazafin          #+#    #+#             */
+/*   Updated: 2016/12/12 23:39:33 by orazafin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//#include "libft.h"
-#include <stdio.h>
-
-int		ft_isalnum(int c)
-{
-	if ((c >= 48 && c <= 57) || (c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return (1);
-	return (0);
-}
-
-int		ft_tolower(int c)
-{
-	if (c >= 65 && c <= 90)
-		return (c + 32);
-	return (c);
-}
-
-int		ft_toupper(int c)
-{
-	if (c >= 97 && c <= 122)
-		return (c - 32);
-	return (c);
-}
-
-int		ft_is_upper(char c)
-{
-	if (c >= 65 && c <= 90)
-		return (1);
-	return (0);
-}
-
-int		ft_is_lower(char c)
-{
-	if (c >= 97 && c <= 122)
-		return (1);
-	return (0);
-}
+#include "libft.h"
 
 char *ft_strcapitalize(char *str)
 {
@@ -71,11 +35,4 @@ char *ft_strcapitalize(char *str)
 		i++;
 	}
 	return (str);
-}
-
-int		main(void)
-{
-	char str[1000] = "salut, SALUT ? 42SALUT 42salut, quArente-deux; cinquDte+Et+un";
-	printf("%s\n", ft_strcapitalize(str));
-	return (0);
 }
