@@ -6,7 +6,7 @@
 /*   By: orazafin <orazafin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/21 11:35:08 by orazafin          #+#    #+#             */
-/*   Updated: 2016/11/30 10:44:00 by orazafin         ###   ########.fr       */
+/*   Updated: 2016/12/13 13:23:13 by orazafin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void	*ft_memset(void *s, int c, size_t n)
 	char	*s1;
 	size_t	i;
 
-	s1 = s;
+	s1 = (char *)s;
 	i = 0;
 	while (i < n)
 	{

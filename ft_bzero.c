@@ -6,7 +6,7 @@
 /*   By: orazafin <orazafin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/25 10:05:41 by orazafin          #+#    #+#             */
-/*   Updated: 2016/11/30 10:22:25 by orazafin         ###   ########.fr       */
+/*   Updated: 2016/12/13 14:00:57 by orazafin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	ft_bzero(void *s, size_t n)
 	int		value;
 
 	i = 0;
-	s1 = s;
+	s1 = (char *)s;
 	value = 0;
 	while (i < n)
 	{

@@ -6,7 +6,7 @@
 /*   By: orazafin <orazafin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/23 09:00:15 by orazafin          #+#    #+#             */
-/*   Updated: 2016/12/06 10:39:21 by orazafin         ###   ########.fr       */
+/*   Updated: 2016/12/13 14:14:52 by orazafin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ char	*ft_strchr(const char *s, int c)
 
 	i = 0;
 	str = (char *)s;
-	end = ft_strlen(str);
+	end = ft_strlen((const char *)str);
 	if (c == '\0')
 		return (&str[end]);
 	while ((char)str[i] != '\0')

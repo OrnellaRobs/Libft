@@ -6,7 +6,7 @@
 /*   By: orazafin <orazafin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/25 12:22:21 by orazafin          #+#    #+#             */
-/*   Updated: 2016/11/30 10:26:05 by orazafin         ###   ########.fr       */
+/*   Updated: 2016/12/13 14:58:42 by orazafin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,10 @@
 
 char	*ft_strcat(char *dest, const char *src)
 {
-	int len;
-	int i;
+	size_t	len;
+	size_t	i;
 
-	len = ft_strlen(dest);
+	len = ft_strlen((const char *)dest);
 	i = 0;
 	while (src[i])
 	{

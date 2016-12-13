@@ -6,7 +6,7 @@
 /*   By: orazafin <orazafin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/21 13:37:25 by orazafin          #+#    #+#             */
-/*   Updated: 2016/12/06 14:50:55 by orazafin         ###   ########.fr       */
+/*   Updated: 2016/12/13 14:38:27 by orazafin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strnstr(const char *str, const char *to_find, size_t n)
 {
-	unsigned int i;
-	unsigned int j;
+	size_t i;
+	size_t j;
 
 	i = 0;
 	if (to_find[i] == '\0')

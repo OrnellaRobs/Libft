@@ -6,7 +6,7 @@
 /*   By: orazafin <orazafin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/24 15:03:24 by orazafin          #+#    #+#             */
-/*   Updated: 2016/12/08 14:10:37 by orazafin         ###   ########.fr       */
+/*   Updated: 2016/12/13 13:23:56 by orazafin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	unsigned char			*dest_tmp;
 	unsigned const char		*source_tmp;
 
-	dest_tmp = dst;
-	source_tmp = src;
+	dest_tmp = (unsigned char *)dst;
+	source_tmp = (unsigned const char *)src;
 	if (source_tmp <= dest_tmp)
 	{
 		while (len--)

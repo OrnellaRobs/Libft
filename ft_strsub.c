@@ -6,7 +6,7 @@
 /*   By: orazafin <orazafin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/12 23:37:15 by orazafin          #+#    #+#             */
-/*   Updated: 2016/12/13 11:13:27 by orazafin         ###   ########.fr       */
+/*   Updated: 2016/12/13 14:49:48 by orazafin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
-	char			*copy_s;
-	unsigned int	i;
+	char	*copy_s;
+	size_t	i;
 
 	if (!s)
 		return (NULL);

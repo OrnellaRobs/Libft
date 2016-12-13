@@ -6,7 +6,7 @@
 /*   By: orazafin <orazafin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/24 13:46:30 by orazafin          #+#    #+#             */
-/*   Updated: 2016/12/06 13:45:47 by orazafin         ###   ########.fr       */
+/*   Updated: 2016/12/13 13:23:43 by orazafin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,8 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 	unsigned const char		*source_tmp;
 
 	i = 0;
-	dest_tmp = dest;
-	source_tmp = src;
+	dest_tmp = (unsigned char *)dest;
+	source_tmp = (unsigned const char *)src;
 	while (i < n)
 	{
 		dest_tmp[i] = source_tmp[i];
