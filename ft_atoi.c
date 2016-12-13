@@ -6,13 +6,13 @@
 /*   By: orazafin <orazafin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/12 23:37:56 by orazafin          #+#    #+#             */
-/*   Updated: 2016/12/12 23:37:59 by orazafin         ###   ########.fr       */
+/*   Updated: 2016/12/13 16:17:24 by orazafin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int				ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int i;
 	int res;
