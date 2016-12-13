@@ -6,7 +6,7 @@
 /*   By: orazafin <orazafin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 13:45:42 by orazafin          #+#    #+#             */
-/*   Updated: 2016/12/12 13:48:45 by orazafin         ###   ########.fr       */
+/*   Updated: 2016/12/13 16:30:37 by orazafin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,7 @@ char			**ft_strsplit(char const *s, char c)
 
 	if (!s || !c)
 		return (NULL);
-	nb = ft_count_word((char *)s, c);
+	nb = ft_count_word(s, c);
 	if (!(tab = (char **)malloc(sizeof(char*) * (nb + 1))))
 		return (NULL);
 	tab = split(s, c, tab);
