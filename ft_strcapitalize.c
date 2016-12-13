@@ -6,13 +6,13 @@
 /*   By: orazafin <orazafin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/12 23:39:26 by orazafin          #+#    #+#             */
-/*   Updated: 2016/12/12 23:39:33 by orazafin         ###   ########.fr       */
+/*   Updated: 2016/12/13 11:03:11 by orazafin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strcapitalize(char *str)
+char	*ft_strcapitalize(char *str)
 {
 	int i;
 	int flag;
