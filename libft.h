@@ -6,7 +6,7 @@
 /*   By: orazafin <orazafin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/12 23:37:26 by orazafin          #+#    #+#             */
-/*   Updated: 2016/12/13 15:33:12 by orazafin         ###   ########.fr       */
+/*   Updated: 2016/12/13 16:25:29 by orazafin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -82,7 +82,7 @@ void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
 int					ft_count_word(char *str, char c);
-int					ft_is_space(char *str);
+int					ft_is_space(const char *str);
 int					ft_count_number(int n);
 t_list				*ft_create_elem(void *content);
 char				*ft_strcapitalize(char *str);
