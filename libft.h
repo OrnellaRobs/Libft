@@ -6,7 +6,7 @@
 /*   By: orazafin <orazafin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/12 23:37:26 by orazafin          #+#    #+#             */
-/*   Updated: 2017/04/03 19:47:28 by orazafin         ###   ########.fr       */
+/*   Updated: 2017/04/06 15:50:37 by orazafin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,6 +88,6 @@ t_list				*ft_create_elem(void *content);
 char				*ft_strcapitalize(char *str);
 int					ft_is_upper(char c);
 int					ft_is_lower(char c);
-void	  			ft_list_push_back(t_list **list, void *content);
+void				ft_list_push_back(t_list **list, void *content);
 
 #endif
