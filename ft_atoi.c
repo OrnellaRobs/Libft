@@ -6,7 +6,7 @@
 /*   By: orazafin <orazafin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/12 23:37:56 by orazafin          #+#    #+#             */
-/*   Updated: 2016/12/13 16:17:24 by orazafin         ###   ########.fr       */
+/*   Updated: 2017/04/12 14:32:09 by orazafin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,14 +20,14 @@ int	ft_atoi(const char *str)
 
 	i = 0;
 	res = 0;
-	negatif = 0;
+	negatif = 1;
 	while (ft_is_space(str) == 1)
 		str++;
 	if (str[i] == '+')
 		i++;
 	else if (str[i] == '-')
 	{
-		negatif = 1;
+		negatif = -1;
 		i++;
 	}
 	while (str[i] >= '0' && str[i] <= '9')
@@ -35,7 +35,5 @@ int	ft_atoi(const char *str)
 		res = res * 10 + str[i] - '0';
 		i++;
 	}
-	if (negatif == 1)
-		return (res * (-1));
-	return (res);
+	return (res * negatif);
 }
