@@ -6,12 +6,13 @@
 /*   By: orazafin <orazafin@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/12 23:37:26 by orazafin          #+#    #+#             */
-/*   Updated: 2017/04/21 18:42:00 by orazafin         ###   ########.fr       */
+/*   Updated: 2017/04/21 18:45:07 by orazafin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# define BUFF_SIZE 8
 # include <stdlib.h>
 # include <unistd.h>
 # include <string.h>
@@ -22,6 +23,14 @@ typedef struct		s_list
 	size_t			content_size;
 	struct s_list	*next;
 }					t_list;
+
+typedef struct		s_file
+{
+	int				fd;
+	char			*str;
+	struct s_file	*next;
+	char			*tmp;
+}					t_file;
 
 void				*ft_memset(void *s, int c, size_t n);
 void				ft_bzero(void *s, size_t n);
@@ -89,5 +98,6 @@ char				*ft_strcapitalize(char *str);
 int					ft_is_upper(char c);
 int					ft_is_lower(char c);
 void				ft_list_push_back(t_list **list, void *content);
+int					get_next_line(int fd, char **line);
 
 #endif
